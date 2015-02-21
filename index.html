@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>General Attributes</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container clearfix">
+    <h1>.attr()</h1>
+    <div class="feature">
+      <img src="http://placekitten.com/g/200/300">
+      <p class="show"></p>
+      <div class="buttons">
+        <button class="btn">Get New Kitty</button>
+        <h2>.removeAttr()</h2>  
+        <button class="remove">Taketh Away</button>
+      </div><!--end of button-->
+    </div><!--end of feature-->
+  </div><!--end of attr()-->
+
+  <div class="container clearfix">
+    <h1>.val()</h1>
+    <select id="single">
+      <option>Cat</option>
+      <option>Dog</option>
+    </select>
+  
+    <p class="singles"></p>
+    <select id="multiples" multiple>
+      <option>Kittens</option>
+      <option>Puppies</option>
+      <option>Cubs</option>
+    </select>
+    <p class="multiples"></p>
+    <hr>
+    <div>
+      <button>I</button>
+      <button>Push</button>
+      <button>da Button</button>
+    </div><!--end of buttons()-->
+  <input type="text" value="click a button">
+  </div><!--end of val()-->
+
+  <div class="container clearfix">
+    <h1>.attr() + .val()</h1>
+    <div class="feature">
+      <img src="http://placekitten.com/g/200/300">
+    <div class="actions">
+        <input type="text">
+        <button class="btn">Change me</button>
+        <button class="remove">Taketh Away</button>
+      </div>
+    </div><!--end of feature()-->
+  </div><!--end of attr_val--> 
+
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

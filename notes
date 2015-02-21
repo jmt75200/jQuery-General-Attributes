@@ -1,0 +1,61 @@
+
+jQuery is a client side library that works across multiple browsers. 
+
+
+
+:: .val() ::
+
+Getting the current value of the first element in the set of matched elements
+*Does not accept arguments
+Used primarily to get the values of form elements such as: 
+  input, select and textarea
+
+:: .val( value ) ::
+
+Sets the value of each element in a set of matched elements
+
+Value types: String, Number, Array
+
+  :: .val(function) ::
+
+  Function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.
+
+Typically used to set te values of form fields
+
+|| [] = if (mv.length == 0){ mv = []}
+
+
+:: .attr vs .prop ::
+.prop() provides a way to explicitly retrieve property values
+.attr() retrieves attributes
+
+:: .attr(attributeName) ::
+Type: String
+Get the value of an attribute value for only the first element in the matched set. 
+
+:: .attr(attributeName, value) :: 
+AttributeName = String
+value = Number/String
+
+:: .attr(attrbutes) ::
+PlainObject - an object of attribute-value pairs to set
+
+:: .attr(attributeName, function) ::
+$( "#id" ).attr("title", function( i, val ){
+  return val + "- photo by kelly clark"
+});
+
+http://jquery-howto.blogspot.com/2011/06/html-difference-between-attribute-and.html
+
+http://jsbin.com/lizavojuwa/1/edit
+
+:: .prop() ::
+Sets or returns properties and values of the selected elements.
+It should be used with:
+  selectedIndex - returns an integer
+  tagName - returns tag name of the element
+  nodeName
+  nodeType
+  ownerDocument
+  defaultChecked
+  defaultSelected
