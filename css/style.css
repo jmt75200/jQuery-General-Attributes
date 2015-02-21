@@ -6,30 +6,63 @@
   clear: both;
 }
 
-h1{
+header h1{
   background-color: #B000B5;
+  /* text-align: center; */
+  color: #fff;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
 }
 
 h2{
   color: #000;
 }
 
+/*ul{
+  margin: auto;
+}
+li{
+  text-align: center;
+  float: left;
+  display: inline;
+}*/
+
+img{
+  /* background-color: blue; */
+  float: left;
+/*   padding: 20px; */
+  width: 100%;
+}
+
 .container{
   margin: auto;
   width: 900px;
   text-align: center;
-  color: #fff;
-  background-color: salmon;
+  /* background-color: salmon; */
+}
+
+.container:nth-child(3),
+.container:nth-child(4){
+  padding: 150px 0;
 }
 
 .buttons{
   float: right;
+  padding: 20px;
 }
 
 .feature{
   margin:auto;
-/*   background-color: green; */
-  width: 50%;
+  /* background-color: green; */ 
+  width: 450px;
   float:left;
+  text-align: center;
+  padding: 20px 0; 
 }
 
+footer{
+  text-align: center;
+}

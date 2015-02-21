@@ -6,55 +6,81 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<header>
+  <h1>General Attribute Demos</h1>
+  <!-- <ul>
+    <li><a href="#val"></a>.val()</li>
+    <li><a href="#combo"></a>.val() + .attr()</li>
+  </ul> -->
+</header>
+  <div class="container clearfix">
+    <h1>.prop()</h1>
+    <p>Get or set the value of a property for an element</p>
+    <input id="check1" type="checkbox" checked="checked">
+    <label for="check1">Am I Checked?</label>
+    <p class="prop_demo"></p>
+    
+  </div>
   <div class="container clearfix">
     <h1>.attr()</h1>
+    <p>Gets or sets the value of one or more attribute for every matched element.</p>
     <div class="feature">
-      <img src="http://placekitten.com/g/200/300">
+      <img src="http://placekitten.com/g/200/300" class="attr_kitten">
       <p class="show"></p>
+    </div><!--end of feature-->
       <div class="buttons">
+        <p>.attr("src", "new img link")</p>
         <button class="btn">Get New Kitty</button>
         <h2>.removeAttr()</h2>  
         <button class="remove">Taketh Away</button>
       </div><!--end of button-->
-    </div><!--end of feature-->
   </div><!--end of attr()-->
 
   <div class="container clearfix">
     <h1>.val()</h1>
-    <select id="single">
-      <option>Cat</option>
-      <option>Dog</option>
-    </select>
-  
-    <p class="singles"></p>
-    <select id="multiples" multiple>
-      <option>Kittens</option>
-      <option>Puppies</option>
-      <option>Cubs</option>
-    </select>
-    <p class="multiples"></p>
-    <hr>
-    <div>
+    <p>Get or set the current value of the first element. *Note used primarily with the input element</p>
+    <div class="feature">
+      <p>selecting one value</p>
+      <select id="single">
+        <option>Cat</option>
+        <option>Dog</option>
+      </select>
+      <p class="singles"></p>
+     
+      <p>selecting multiple value</p>
+      <select id="multiples" multiple>
+        <option>Kittens</option>
+        <option>Puppies</option>
+        <option>Cubs</option>
+      </select>
+      <p class="multiples"></p>
+    </div><!--end of feature-->
+
+    <div class="buttons">
+      <p>Sets the button's text value into the input element.</p>
       <button>I</button>
       <button>Push</button>
       <button>da Button</button>
+      <input type="text" value="click a button" class="text_input">
     </div><!--end of buttons()-->
-  <input type="text" value="click a button">
   </div><!--end of val()-->
 
   <div class="container clearfix">
     <h1>.attr() + .val()</h1>
     <div class="feature">
-      <img src="http://placekitten.com/g/200/300">
-    <div class="actions">
-        <input type="text">
+      <img src="/img/frenchie.jpg" class="val_kitten">
+    </div><!--end of feature()-->
+    <div class="buttons">
+    <p>This demo uses .val() + .attr()</p>
+        <input type="text" class="new_img">
         <button class="btn">Change me</button>
         <button class="remove">Taketh Away</button>
       </div>
-    </div><!--end of feature()-->
   </div><!--end of attr_val--> 
 
-
+  <footer>
+    <p>DevLeague 2015</p>
+  </footer>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>

@@ -1,12 +1,17 @@
 $(function(){
 /* .prop() */
+$( "input" ).change(function() {
+  var $input = $( this );
+  $( ".prop_demo" ).html(
+    ".prop( \"checked\" ): <b>" + $input.prop( "checked" ) + "</b><br>" +
+    ".prop( \"id\" ): <b>" + $input.prop( "id" ) + "</b><br>");
 
-
+}).change();
 
 
 /* .attr() */
   $(".btn").click(function (){
-    $("img").attr("src", "http://placekitten.com/g/200/500");
+    $(".attr_kitten").attr("src", "http://placekitten.com/g/200/500");
   $( ".show" ).text( $( "img" ).attr( "title" ) );
   });
 
@@ -37,9 +42,9 @@ $(function(){
 
   /* .attr() + .val() demo */
   $(".btn").click(function(){
-      var userInput = $("input").val();
-      console.log('userInput', userInput);
-      return $("img").attr("src", userInput);
+    var userInput = $("input.new_img").val();
+    // console.log('userInput', userInput);
+    return $(".val_kitten").attr("src", userInput);
     });
      
     $(".remove").click(function(){
