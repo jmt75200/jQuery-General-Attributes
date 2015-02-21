@@ -6,6 +6,10 @@
   clear: both;
 }
 
+header{
+  text-align: center;
+}
+
 header h1{
   background-color: #B000B5;
   /* text-align: center; */
